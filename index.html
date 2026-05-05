@@ -1,321 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghufran – Portfolio</title>
-  <meta name="description" content="Personal portfolio of Ghufran – a passionate developer building modern web experiences.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghufran Hafeez | Video Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #ededed;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ffffff, #a3a3a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-bg {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased min-h-screen flex flex-col items-center">
 
-  <!-- Custom cursor -->
-  <div class="cursor-dot"  id="cursorDot"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <!-- ─── Navbar ─────────────────────────────────────── -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="#home" class="nav-logo">Ghufran.</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#contact" class="nav-cta">Hire me →</a>
-        <button class="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <ul class="mobile-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ─── Hero ──────────────────────────────────────── -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-tag reveal"><span></span> Available for work</div>
-          <h1 class="hero-name reveal" data-reveal-delay="0.05">
-            Hi, I'm<br><span class="accent">Ghufran</span>
-          </h1>
-          <p class="hero-role reveal" data-reveal-delay="0.1">Front-End Developer &amp; UI Enthusiast</p>
-          <p class="hero-desc reveal" data-reveal-delay="0.15">
-            I craft clean, responsive, and high-performance web experiences.
-            Passionate about turning ideas into polished digital products.
-          </p>
-          <div class="hero-btns reveal" data-reveal-delay="0.2">
-            <a href="#projects" class="btn-primary">View My Work ↓</a>
-            <a href="#contact"  class="btn-outline">Get In Touch</a>
-          </div>
-          <div class="stats-row reveal" data-reveal-delay="0.28">
-            <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years experience</span></div>
-            <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Projects done</span></div>
-            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Happy clients</span></div>
-          </div>
-        </div>
-        <div class="hero-visual reveal" data-reveal-delay="0.1">
-          <div class="avatar-wrap">
-            <div class="avatar-ring-2"></div>
-            <div class="avatar-ring"></div>
-            <div class="avatar-initials">G</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── About ─────────────────────────────────────── -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-img-wrap reveal">
-          <div class="about-card">
-            <div class="about-card-inner">👨‍💻</div>
-          </div>
-          <div class="about-badge">
-            <div class="badge-icon">🎓</div>
-            <div class="badge-text">
-              <strong>UET Student</strong>
-              <span>Computer Science</span>
+    <main class="max-w-3xl w-full px-6 py-20 flex-grow">
+        <!-- Header / Hero Section -->
+        <header class="mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 gradient-text">Ghufran Hafeez</h1>
+            <h2 class="text-xl md:text-2xl text-gray-400 font-light mb-6">
+                Professional Video Editor & Post-Production Specialist
+            </h2>
+            <p class="text-gray-400 leading-relaxed max-w-2xl">
+                Transforming raw footage into engaging visual stories. Specializing in color grading, audio editing, and dynamic social media content creation. Delivering high-quality edits on Fiverr since 2024.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <a href="mailto:your-email@example.com" class="bg-white text-black px-5 py-2.5 rounded-md font-medium hover:bg-gray-200 transition-colors">Get in touch</a>
+                <a href="#" class="card-bg text-white px-5 py-2.5 rounded-md font-medium hover:bg-white/10 transition-colors">Fiverr Profile</a>
             </div>
-          </div>
-        </div>
-        <div class="about-text">
-          <div class="section-label reveal">About Me</div>
-          <h2 class="section-title reveal" data-reveal-delay="0.05">
-            Passionate developer,<br>problem solver.
-          </h2>
-          <p class="reveal" data-reveal-delay="0.1">
-            I'm Ghufran, a front-end developer studying Computer Science at UET. I love
-            building things for the web — from sleek landing pages to fully functional
-            web applications.
-          </p>
-          <p class="reveal" data-reveal-delay="0.13">
-            When I'm not coding, you'll find me exploring new technologies, contributing
-            to open-source projects, or playing football with friends.
-          </p>
-          <div class="about-info reveal" data-reveal-delay="0.17">
-            <div class="info-item">
-              <div class="info-label">Location</div>
-              <div class="info-value">Lahore, Pakistan</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Degree</div>
-              <div class="info-value">BS Computer Science</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">University</div>
-              <div class="info-value">UET Lahore</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Status</div>
-              <div class="info-value">Open to work ✅</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </header>
 
-  <!-- ─── Skills ────────────────────────────────────── -->
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label reveal">Skills</div>
-        <h2 class="section-title reveal" data-reveal-delay="0.05">What I work with</h2>
-        <p class="section-sub reveal" data-reveal-delay="0.1">
-          A set of tools and technologies I've mastered building real-world projects.
-        </p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card reveal" data-reveal-delay="0.05">
-          <div class="skill-icon">🌐</div>
-          <div class="skill-name">HTML5</div>
-          <div class="skill-desc">Semantic markup, accessibility, SEO best practices.</div>
-          <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
-        </div>
-        <div class="skill-card reveal" data-reveal-delay="0.1">
-          <div class="skill-icon">🎨</div>
-          <div class="skill-name">CSS3 / Sass</div>
-          <div class="skill-desc">Responsive layouts, animations, CSS Grid & Flexbox.</div>
-          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
-        </div>
-        <div class="skill-card reveal" data-reveal-delay="0.15">
-          <div class="skill-icon">⚡</div>
-          <div class="skill-name">JavaScript</div>
-          <div class="skill-desc">ES6+, DOM manipulation, async/await, APIs.</div>
-          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
-        </div>
-        <div class="skill-card reveal" data-reveal-delay="0.2">
-          <div class="skill-icon">⚛️</div>
-          <div class="skill-name">React</div>
-          <div class="skill-desc">Components, hooks, state management, routing.</div>
-          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
-        </div>
-        <div class="skill-card reveal" data-reveal-delay="0.25">
-          <div class="skill-icon">🐍</div>
-          <div class="skill-name">Python</div>
-          <div class="skill-desc">Scripting, data processing, Flask basics.</div>
-          <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
-        </div>
-        <div class="skill-card reveal" data-reveal-delay="0.3">
-          <div class="skill-icon">🔧</div>
-          <div class="skill-name">Git &amp; GitHub</div>
-          <div class="skill-desc">Version control, branching, open-source collaboration.</div>
-          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Projects ──────────────────────────────────── -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label reveal">Projects</div>
-        <h2 class="section-title reveal" data-reveal-delay="0.05">Things I've built</h2>
-        <p class="section-sub reveal" data-reveal-delay="0.1">
-          A selection of projects that showcase my skills and passion for the web.
-        </p>
-      </div>
-      <div class="projects-grid">
-
-        <article class="project-card reveal" data-reveal-delay="0.05">
-          <div class="project-thumb" style="background: linear-gradient(135deg,#1a1a2e,#16213e);">⚽</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
+        <!-- Expertise Section -->
+        <section class="mb-16">
+            <h3 class="text-xl font-semibold mb-6 border-b border-white/10 pb-2">Expertise</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="card-bg p-5 rounded-xl">
+                    <h4 class="font-medium text-white mb-2">Video Editing & Post-Production</h4>
+                    <p class="text-sm text-gray-400">Seamless cuts, storytelling, and pacing to keep audiences hooked from start to finish.</p>
+                </div>
+                <div class="card-bg p-5 rounded-xl">
+                    <h4 class="font-medium text-white mb-2">Color Grading</h4>
+                    <p class="text-sm text-gray-400">Enhancing visual mood and tone to give your videos a cinematic and professional look.</p>
+                </div>
+                <div class="card-bg p-5 rounded-xl">
+                    <h4 class="font-medium text-white mb-2">Social Media & Reels</h4>
+                    <p class="text-sm text-gray-400">Creating highly engaging, fast-paced shorts, reels, and TikToks optimized for modern algorithms.</p>
+                </div>
+                <div class="card-bg p-5 rounded-xl">
+                    <h4 class="font-medium text-white mb-2">Audio Editing</h4>
+                    <p class="text-sm text-gray-400">Crisp voiceovers, sound design, and audio mixing for an immersive auditory experience.</p>
+                </div>
             </div>
-            <h3 class="project-title">UET Juniors Website</h3>
-            <p class="project-desc">Official website for UET Juniors football team — featuring news, match updates, team roster, and a dynamic loading screen.</p>
-            <div class="project-links">
-              <a href="https://github.com/sarhal7/uet7" target="_blank" rel="noopener" class="project-link">
-                ⬡ Source
-              </a>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-16">
+            <h3 class="text-xl font-semibold mb-6 border-b border-white/10 pb-2">Selected Work</h3>
+            <div class="space-y-4">
+                <div class="card-bg p-6 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-lg font-medium text-white group-hover:text-blue-400 transition-colors">Cricket Transition Videos</h4>
+                        <span class="text-xs font-medium bg-white/10 text-gray-300 px-2 py-1 rounded">Sports Edit</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-4">
+                        High-energy sports montages featuring smooth transitions, beat-synced cuts, and dynamic effects tailored for cricket fans and social media platforms.
+                    </p>
+                </div>
+                <div class="card-bg p-6 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-lg font-medium text-white group-hover:text-blue-400 transition-colors">Social Media Reels</h4>
+                        <span class="text-xs font-medium bg-white/10 text-gray-300 px-2 py-1 rounded">Content Creation</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-4">
+                        Engaging short-form content featuring captions, motion graphics, and sound design designed to maximize viewer retention.
+                    </p>
+                </div>
             </div>
-          </div>
-        </article>
+        </section>
 
-        <article class="project-card reveal" data-reveal-delay="0.12">
-          <div class="project-thumb" style="background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);">🎓</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
+        <!-- Tools Section -->
+        <section class="mb-16">
+            <h3 class="text-xl font-semibold mb-6 border-b border-white/10 pb-2">Tools & Software</h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="card-bg px-4 py-2 rounded-full text-sm text-gray-300 flex items-center gap-2">
+                    Adobe Premiere Pro
+                </span>
+                <span class="card-bg px-4 py-2 rounded-full text-sm text-gray-300 flex items-center gap-2">
+                    Adobe After Effects
+                </span>
+                <span class="card-bg px-4 py-2 rounded-full text-sm text-gray-300 flex items-center gap-2">
+                    Adobe Dimension
+                </span>
+                <span class="card-bg px-4 py-2 rounded-full text-sm text-gray-300 flex items-center gap-2">
+                    Adobe Motion
+                </span>
             </div>
-            <h3 class="project-title">UET Juniors Landing Page</h3>
-            <p class="project-desc">A clean, responsive landing page for UET Juniors with a modern layout, team showcase, and social links.</p>
-            <div class="project-links">
-              <a href="https://github.com/sarhal7/uetjuniors.com" target="_blank" rel="noopener" class="project-link">
-                ⬡ Source
-              </a>
-            </div>
-          </div>
-        </article>
+        </section>
+    </main>
 
-        <article class="project-card reveal" data-reveal-delay="0.2">
-          <div class="project-thumb" style="background: linear-gradient(135deg,#1a0533,#3b0764);">🖥️</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <h3 class="project-title">Personal Portfolio</h3>
-            <p class="project-desc">This very portfolio — a fully responsive single-page site with smooth animations, dark theme, and a dynamic skill showcase.</p>
-            <div class="project-links">
-              <a href="https://github.com/sarhal7/ghufran" target="_blank" rel="noopener" class="project-link">
-                ⬡ Source
-              </a>
-            </div>
-          </div>
-        </article>
+    <footer class="w-full text-center py-8 text-gray-500 text-sm mt-auto border-t border-white/5">
+        <p>&copy; 2024–2026 Ghufran Hafeez. All rights reserved.</p>
+    </footer>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Contact ───────────────────────────────────── -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label reveal">Contact</div>
-        <h2 class="section-title reveal" data-reveal-delay="0.05">Let's work together</h2>
-        <p class="section-sub reveal" data-reveal-delay="0.1">
-          Have a project in mind or want to say hello? Drop me a message!
-        </p>
-      </div>
-      <div class="contact-grid">
-        <div>
-          <p class="reveal" style="color:var(--text-dim); margin-bottom:0.5rem;">
-            I'm currently open to freelance projects and collaborations.
-            Whether it's a website, a web app, or just a quick question — I'd love to hear from you.
-          </p>
-          <div class="contact-links">
-            <a href="https://github.com/sarhal7" target="_blank" rel="noopener" class="contact-link-card reveal" data-reveal-delay="0.1">
-              <div class="contact-link-icon">🐙</div>
-              <div class="contact-link-info">
-                <strong>GitHub</strong>
-                <span>github.com/sarhal7</span>
-              </div>
-            </a>
-            <a href="mailto:ghufran@example.com" class="contact-link-card reveal" data-reveal-delay="0.15">
-              <div class="contact-link-icon">✉️</div>
-              <div class="contact-link-info">
-                <strong>Email</strong>
-                <span>ghufran@example.com</span>
-              </div>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact-link-card reveal" data-reveal-delay="0.2">
-              <div class="contact-link-icon">💼</div>
-              <div class="contact-link-info">
-                <strong>LinkedIn</strong>
-                <span>Connect with me</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <form class="contact-form reveal" id="contactForm" data-reveal-delay="0.1">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
-          </div>
-          <button type="submit" class="btn-primary" style="align-self:flex-start;">Send Message →</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Footer ────────────────────────────────────── -->
-  <footer>
-    <div class="container">
-      <p>© 2025 <a href="#home">Ghufran</a>. Crafted with ❤️ and lots of ☕</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -1,26 +1,15 @@
-# Ghufran – Portfolio
+# Ghufran Hafeez – Portfolio
 
-A personal portfolio website built with vanilla HTML, CSS, and JavaScript.
+Personal portfolio website for **Ghufran Hafeez**, Professional Video Editor & Post-Production Specialist.
 
 ## Features
 
-- Fully responsive single-page layout
-- Dark modern theme with a purple accent palette
-- Smooth scroll-reveal animations
-- Interactive skill bars with animated fills
-- Projects showcase with tags and links
-- Contact form
-- Custom animated cursor (desktop)
-- Hamburger menu for mobile
-
-## Structure
-
-```
-index.html   – Main page (Hero, About, Skills, Projects, Contact)
-style.css    – All styles (responsive, animations, components)
-script.js    – Cursor, navbar scroll, scroll-reveal, skill bars, form
-```
+- Clean, minimal dark-theme single-page layout
+- Built with [Tailwind CSS](https://tailwindcss.com/) (CDN) — no build step required
+- Sections: Hero, Expertise, Selected Work, Tools & Software
+- Fully responsive
 
 ## Getting Started
 
-Just open `index.html` in any modern browser — no build step required.
+Open `index.html` in any modern browser — no build step required.
+
